@@ -39,11 +39,7 @@ public class PlayerController : MonoBehaviour
 
             body.rotation = Quaternion.LookRotation(body.velocity);
             
-            /*mousePosition = Input.mousePosition;
-            mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-            pos = new Vector3(mousePosition.x, mousePosition.y, 0);
-            transform.position = Vector3.Lerp(transform.position, pos, speed);
-            */
+            
         }
         else
         {

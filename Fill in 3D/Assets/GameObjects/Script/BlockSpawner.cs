@@ -13,8 +13,9 @@ public class BlockSpawner : MonoBehaviour
     [SerializeField]
     private GameObject cube;
 
-    
-    public float size = .1f;
+    [Space]
+    [SerializeField]
+    private float size = .1f;
 
     [Space]
     [SerializeField]
@@ -28,7 +29,7 @@ public class BlockSpawner : MonoBehaviour
     [SerializeField]
     private GameObject plate;
 
-    public int spawnedCube = 0;
+    int spawnedCube = 0;
 
 
 
@@ -66,14 +67,7 @@ public class BlockSpawner : MonoBehaviour
                 plateObj.transform.localPosition = cubePos;
                 plateObj.transform.localScale = new Vector3 (1f,0f,1f) * size;
 
-                /*//Eşleştireceğimiz küpleri spawnladığımız kısım
-                interactCubePosition = new Vector3(size * (x - (texture2D.width * .5f) + interactCubePos.position.x), size * .5f, size * (y - (texture2D.height * .5f) + interactCubePos.position.x));
-                GameObject interactCubeObj = Instantiate(interactCube, interactCubePos);
-                interactCubeObj.transform.localPosition = interactCubePosition;                
-                interactCubeObj.transform.localScale = Vector3.one * size;
-                
-
-                */
+               
                 
             }
         }
